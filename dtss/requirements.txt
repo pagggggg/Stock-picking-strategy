@@ -1,0 +1,3 @@
+twstock
+pandas
+pandas-datareader

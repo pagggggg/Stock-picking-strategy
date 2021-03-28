@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>坡段選股</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="{{url_for('static',filename='vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{{url_for('static',filename='css/grayscale.min.css')}}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+  <!-- Navigation -->
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<br>
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="{{ url_for('index')}}"><div style="margin-top: 20px;">回到首頁</div></a>
+    </div>
+
+  </nav>
+
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">坡段選股</h1>
+        <h2 class="text-white-50 mx-auto mt-4 mb-3">使用一些基本策略及進階策略作為您的參考</h2>
+            <div class="text-white-50 mx-auto mt-4 mb-2" style="font-size:40px">1.四大買賣點&nbsp;
+            <a href="{{ url_for('best_four_point')}}"><button class="btn btn-primary js-scroll-trigger" style="font-size:15px" type='submit'>搜尋</button></a></div>
+
+            <div class="text-white-50 mx-auto mt-4 mb-2" style="font-size:40px">2.短線進場點&nbsp;
+            <a href="{{ url_for('bsp_short_strategy')}}"><button class="btn btn-primary js-scroll-trigger" style="font-size:15px" type='submit'>搜尋</button></a></div>
+
+            <div class="text-white-50 mx-auto mt-4 mb-2" style="font-size:40px">3.長線進場點&nbsp;
+            <a href="{{ url_for('bsp_long_strategy')}}"><button class="btn btn-primary js-scroll-trigger" style="font-size:15px" type='submit'>搜尋</button></a></div>
+          </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Project create by Solomon.
+      <br>
+      透過本程式獲得之資訊僅作為投資人參考，非供投資人之投資買賣建議，基於前開資料之任何交易或投資決定，投資人須自負風險及盈虧，本程式亦不負本任何責任。
+      <br>本作者權對人所有經由本程式傳送之資訊之正確性與適用性均不負擔任何責任。
+    </div>
+  </footer>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,5 @@
+twstock
+flask
+secure-smtplib
+numpy
+Flask-Bootstrap4
